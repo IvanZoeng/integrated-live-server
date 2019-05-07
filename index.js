@@ -1,17 +1,13 @@
 const Koa = require('koa');
 const app = new Koa();
 const bodyParser = require('body-parser');
+const cors = require('koa2-cors')
 import router from './controller'
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: false}));
 
-// app.all('*', (ctx, next) => {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
-//     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS,PATCH");
-//     next()
-// });
+app.use(cors());
 
 app.use(router.routes()).use(router.allowedMethods());
 

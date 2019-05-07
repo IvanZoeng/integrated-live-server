@@ -12,7 +12,7 @@ const instance = axios.create({
 function formatOne(data) {
     let owner = data.uname;
     let name = data.title;
-    let img = data.system_cover;
+    let img = data.user_cover;
     let url = 'https://live.bilibili.com/' + data.roomid;
     let hot = data.online;
     let website = 'Bilibili';

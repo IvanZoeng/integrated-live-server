@@ -15,7 +15,8 @@
     "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.18.3",
     "koa": "^2.7.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6"
   },
   "engines": {
     "node": ">= 6.0.0",
