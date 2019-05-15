@@ -20,7 +20,8 @@ router
             'zzq': '自走棋',
             'wow': '魔兽世界',
             'dota2': 'DOTA2',
-            'warcraft': '魔兽争霸'
+            'warcraft': '魔兽争霸',
+            'mrfz': '明日方舟'
         }
     })
 

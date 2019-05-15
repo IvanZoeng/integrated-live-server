@@ -28,7 +28,8 @@ const apiMap = {
     'zzq': '650',
     'wow': '5',
     'dota2': '217',
-    'warcraft': '55'
+    'warcraft': '55',
+    'mrfz': '531'
 }
 
 export default async function getData(category){
