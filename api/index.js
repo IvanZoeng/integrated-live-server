@@ -5,10 +5,6 @@ import bilibiliGetData from './bilibili'
 
 async function getData(category) {
     let data = [];
-    // data = data.concat(await douyuGetData(category));
-    // data = data.concat(await wangyiGetData(category));
-    // data = data.concat(await huyaGetData(category));
-    // data = data.concat(await bilibiliGetData(category));
 
     let douyuPromise = douyuGetData(category).then(res => data = [...data, ...res])
     let wangyiPromise = wangyiGetData(category).then(res => data = [...data, ...res])
