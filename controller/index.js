@@ -11,12 +11,12 @@ router
     .get('/categories', (ctx, next) => {
         ctx.response.body = {
             // 'all': '全部',
-            'lol': '英雄联盟',
             'hs': '炉石传说',
+            'lol': '英雄联盟',
             'hos': '风暴英雄',
             'sc': '星际争霸',
             'ow': '守望先锋',
-            'dance': '唱歌跳舞',
+            // 'dance': '唱歌跳舞',
             'zzq': '自走棋',
             'wow': '魔兽世界',
             'dota2': 'DOTA2',
