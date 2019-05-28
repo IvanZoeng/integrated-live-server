@@ -11,8 +11,8 @@ const instance = axios.create({
 function formatOne(data) {
     let owner = data.nickname;
     let name = data.title;
-    let img = data.purl;
-    let url = data.cover;
+    let img = data.cover;
+    let url = data.link;
     let hot = data.hot_score;
     let website = 'Wangyi';
     return new Room(owner, name, img, url, hot, website);
@@ -40,6 +40,6 @@ export default async function getData(category){
 
     path += '?format=json'
 
-    let p = await instance.get(path);
-    return handleLiveInfo(p.data.lives, formatOne, `Get Wangyi ${category} Data Fail`)
+    let p = await instance.get(path)
+    return handleLiveInfo(p.data.videos, formatOne, `Get Wangyi ${category} Data Fail`)
 }
