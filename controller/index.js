@@ -10,7 +10,7 @@ router
     })
     .get('/categories', (ctx, next) => {
         ctx.response.body = {
-            'all': '全部',
+            // 'all': '全部',
             'lol': '英雄联盟',
             'hs': '炉石传说',
             'hos': '风暴英雄',
